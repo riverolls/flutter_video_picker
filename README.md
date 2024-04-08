@@ -7,7 +7,7 @@
   video_picker:
     git:
       url: https://github.com/riverolls/flutter_video_picker.git
-      tag: 1.0.0
+      tag: 1.0.1
 ```
 
 ## 接口
