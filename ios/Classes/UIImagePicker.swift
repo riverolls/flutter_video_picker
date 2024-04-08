@@ -17,7 +17,7 @@ class UIImagePicker: NSObject, UINavigationControllerDelegate, UIImagePickerCont
     func chooseVideoFromGallery(_ parent: UIViewController) {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
-        picker.mediaTypes = [kUTTypeMovie as String]
+        picker.mediaTypes = [kUTTypeMovie as String, kUTTypeVideo as String, kUTTypeMPEG4 as String]
         picker.videoQuality = UIImagePickerController.QualityType.typeHigh
         picker.videoExportPreset = AVAssetExportPresetPassthrough  // 保证视频不被压缩
         picker.modalPresentationStyle = .overCurrentContext
